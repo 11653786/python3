@@ -16,3 +16,12 @@ pip reinstall mysqlclient
 #报错_init_.py引入 import pymysql pymysql.install_as_MySQLdb()
 https://www.jianshu.com/p/47908a5ed300
 
+#orm根据实体生成数据库 ,https://blog.csdn.net/diao1057/article/details/98472327
+python manage.py migrate
+
+
+#根据sql生成models(类似mybatis自动生成类),https://www.jianshu.com/p/37ff674d981b
+
+python manage.py inspectdb > python3/models.py
+
+
