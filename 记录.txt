@@ -12,3 +12,7 @@ export CPPFLAGS=-I/usr/local/opt/mysql-client/include
 3. 重新安装 mysqlclient
 pip reinstall mysqlclient
 
+
+#报错_init_.py引入 import pymysql pymysql.install_as_MySQLdb()
+https://www.jianshu.com/p/47908a5ed300
+
