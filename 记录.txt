@@ -17,11 +17,13 @@ pip reinstall mysqlclient
 https://www.jianshu.com/p/47908a5ed300
 
 #orm根据实体生成数据库 ,https://blog.csdn.net/diao1057/article/details/98472327
-python manage.py migrate
+# 将Model的改动生成文件
+python manage.py makemigrations  # 此时数据库中还不会生效
+# 提交改动
+python manage.py migrate  # 此时数据库就会自动生成我们Model对应的数据表了
 
 
-#根据sql生成models(类似mybatis自动生成类),https://www.jianshu.com/p/37ff674d981b
-
-python manage.py inspectdb > python3/models.py
+#通过数据库生成Model
+python manage.py inspectdb > mysite/myapp/models.py # > 后代码，为将生成的代码存储到某个Model中
 
 
