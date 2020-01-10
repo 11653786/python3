@@ -24,6 +24,6 @@ python manage.py migrate  # 此时数据库就会自动生成我们Model对应�
 
 
 #通过数据库生成Model
-python manage.py inspectdb > mysite/myapp/models.py # > 后代码，为将生成的代码存储到某个Model中
+python manage.py inspectdb > python3/models.py # > 后代码，为将生成的代码存储到某个Model中
 
 
