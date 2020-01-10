@@ -116,3 +116,15 @@ class DjangoSession(models.Model):
     class Meta:
         managed = False
         db_table = 'django_session'
+
+
+class User(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    name = models.CharField(max_length=20, blank=True, null=True)
+    age = models.IntegerField(blank=True, null=True)
+    sex = models.CharField(max_length=1, blank=True, null=True)
+    salary = models.FloatField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'user'
