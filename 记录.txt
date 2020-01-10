@@ -1,0 +1,14 @@
+#mac 无法安装mysqlclient导致项目报错
+#django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.Did you install mysqlclient?
+1 brew install mysql-connector-c
+2 pip install mysqlclient 执行如果报错
+
+配置环境变量
+#python mysql-client
+PATH=/usr/local/opt/mysql-client/bin:$PATH
+export LDFLAGS=-L/usr/local/opt/mysql-client/lib
+export CPPFLAGS=-I/usr/local/opt/mysql-client/include
+
+3. 重新安装 mysqlclient
+pip reinstall mysqlclient
+
