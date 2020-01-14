@@ -1,10 +1,8 @@
 from django.http import HttpResponse
-from python3.com.yt.django.entity.User import User, Role
+#引入models模块就行了
+from python3 import models
 
 
 def hello(request):
-    user = User(1234)
-    role = Role(1, "张三")
-    role.id
-    role.name
-    return HttpResponse(user.name)
+    models.User.objects.create(name="张三", age=18, sex=1, salary=114)
+    return HttpResponse("12345")
