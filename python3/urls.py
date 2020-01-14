@@ -22,5 +22,6 @@ from python3.com.yt.django import HelloWorld
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', HelloWorld.hello),
+    url('update/', HelloWorld.update),
 
 ]
